@@ -10,8 +10,8 @@ This Weather REST API, developed in Python and FastAPI, serves as a bridge betwe
 
 ## Installation
 - Clone the repository.
-- Install dependencies: pip install -r requirements.txt.
-- Run main.py.
+- Install dependencies: `pip install -r requirements.txt`.
+- Run `uvicorn main:app --reload`
   
 ## Usage
 - Use endpoints to perform CRUD operations on weather data.
