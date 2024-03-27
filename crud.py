@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-import rest_api.models as models, rest_api.schemas as schemas
+import models as models, schemas as schemas
 from uuid import UUID
 
 # ------------------

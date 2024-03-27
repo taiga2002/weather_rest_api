@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
-from rest_api.models import Base
-import rest_api.crud as crud, rest_api.schemas as schemas
-from rest_api.database import engine, SessionLocal
+from models import Base
+import crud as crud, rest_api.schemas as schemas
+from database import engine, SessionLocal
 from sqlalchemy.orm import Session
 from uuid import UUID
 

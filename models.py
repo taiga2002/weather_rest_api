@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Numeric, DECIMAL
 from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import UUID
-from rest_api.database import Base
+from database import Base
 import uuid
 
 class Location(Base):
