@@ -68,7 +68,7 @@ class MSMLocation(Base):
     lsm_weather_id = Column(UUID(as_uuid=True), ForeignKey('msm_weather_data.id'))
 
 
-class GSMWeatherData(Base):
+class MSMWeatherData(Base):
     __tablename__ = "msm_weather_data"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)

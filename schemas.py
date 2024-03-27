@@ -12,7 +12,7 @@ class Location(LocationCreate):
     id: Optional[UUID] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class WeatherDataBase(BaseModel):
     latitude: float
@@ -28,25 +28,25 @@ class WeatherDataBase(BaseModel):
     wind_v: float
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class LSMWeatherData(WeatherDataBase):
     id: UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class GSMWeatherData(WeatherDataBase):
     id: UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class MSMWeatherData(WeatherDataBase):
     id: UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class LSMLocation(BaseModel):
     id: UUID
@@ -54,7 +54,7 @@ class LSMLocation(BaseModel):
     lsm_weather_id: UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class GSMLocation(BaseModel):
     id: UUID
@@ -62,7 +62,7 @@ class GSMLocation(BaseModel):
     gsm_weather_id: UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class MSMLocation(BaseModel):
     id: UUID
@@ -70,4 +70,4 @@ class MSMLocation(BaseModel):
     msm_weather_id: UUID
     
     class Config:
-        orm_mode = True
+        from_attributes = True
