@@ -1,7 +1,7 @@
 # Weather REST API
 
 ## Overview
-This Weather REST API, developed in Python, serves as a bridge between users and the Japan Meteorological Agency's weather data. Utilizing SQLite for database management, it offers an efficient way to store and retrieve weather information.
+This Weather REST API, developed in Python and FastAPI, serves as a bridge between users and the Japan Meteorological Agency's (気象庁) weather data. Utilizing SQLite for database management, it offers an efficient way to store and retrieve weather information.
 
 ## Features
 - Fetch and store weather data from the Japan Meteorological Agency.
